@@ -1,0 +1,36 @@
+{
+  "name": "Crypto Melman #2123",
+  "description": "Crypto Melman is an NFT collection of Melman the Giraffe from the Madagascar franchise, living on the Polygon blockchain. Each giraffe NFT is uniquely generated from a pool of 67+ different traits, listed under 6 categories, all of varying rarities",
+  "image": "https://ipfs.io/ipfs/bafybeihhwqyfbofppinsox6fw4hpho2rz2kaxq3pvuq7xrmb6nygcvi544",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Dark Pink"
+    },
+    {
+      "trait_type": "Base",
+      "value": "Purple"
+    },
+    {
+      "trait_type": "Clothe",
+      "value": "Blue Hoodie"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cowboy Scull"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Angry"
+    }
+  ],
+  "dna": "da55ed6a432628e4c1873f51e4deaeb428267e19",
+  "edition": 2123,
+  "external_url": "https://cryptomelman.xyz",
+  "date": 1652119216243,
+  "compiler": "HashLips Art Engine - codeSTACKr Modified"
+}
