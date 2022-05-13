@@ -1,6 +1,6 @@
 {
   "response": "OK",
   "chain": "rinkeby",
-  "contract_address": "0x0062C7c7C5658CaBF9F417BC49ECA7C1aB0B7abF",
-  "transaction_hash": "0xcb4a3631dcb547ec7cfbed11cd82032188ccbb9f4c15c1984acb40b0c75df5d1"
+  "contract_address": "0x62cafce2c114d083f9bAbcf2F8E887c984FF27Da",
+  "transaction_hash": "0x220df36982a3f952b2ac7f35843d7189f5939b0639c4c25427b40c6bf9529482"
 }
