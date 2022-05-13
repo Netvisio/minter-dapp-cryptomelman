@@ -1,5 +1,5 @@
-const contractAddress = "0xB2ed14Ec47cEDeC962C4cb35CBb2f94249Ed14A9"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const contractAddress = "0x8606E86A5e05F64b054a7866a9600688B3DcE483"; //Replace with your own contract address
+const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Crypto Melman NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
