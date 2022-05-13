@@ -1,6 +1,6 @@
 const basePath = process.cwd();
 const { NETWORK } = require(`${basePath}/constants/network.js`);
-const fs = require("fs");
+import { existsSync, rmdirSync, mkdirSync, readdirSync, writeFileSync } from "fs";
 const sha1 = require(`${basePath}/node_modules/sha1`);
 const { createCanvas, loadImage } = require(`${basePath}/node_modules/canvas`);
 const buildDir = `${basePath}/build`;
@@ -34,14 +34,14 @@ const HashlipsGiffer = require(`${basePath}/modules/HashlipsGiffer.js`);
 let hashlipsGiffer = null;
 
 const buildSetup = () => {
-  if (fs.existsSync(buildDir)) {
-    fs.rmdirSync(buildDir, { recursive: true });
+  if (existsSync(buildDir)) {
+    rmdirSync(buildDir, { recursive: true });
   }
-  fs.mkdirSync(buildDir);
-  fs.mkdirSync(`${buildDir}/json`);
-  fs.mkdirSync(`${buildDir}/images`);
+  mkdirSync(buildDir);
+  mkdirSync(`${buildDir}/json`);
+  mkdirSync(`${buildDir}/images`);
   if (gif.export) {
-    fs.mkdirSync(`${buildDir}/gifs`);
+    mkdirSync(`${buildDir}/gifs`);
   }
 };
 
@@ -69,8 +69,7 @@ const cleanName = (_str) => {
 };
 
 const getElements = (path) => {
-  return fs
-    .readdirSync(path)
+  return readdirSync(path)
     .filter((item) => !/(^|\/)\.[^\/\.]/g.test(item))
     .map((i, index) => {
       return {
@@ -108,7 +107,7 @@ const layersSetup = (layersOrder) => {
 };
 
 const saveImage = (_editionCount) => {
-  fs.writeFileSync(
+  writeFileSync(
     `${buildDir}/images/${_editionCount}.png`,
     canvas.toBuffer("image/png")
   );
@@ -297,7 +296,7 @@ const createDna = (_layers) => {
 };
 
 const writeMetaData = (_data) => {
-  fs.writeFileSync(`${buildDir}/json/_metadata.json`, _data);
+  writeFileSync(`${buildDir}/json/_metadata.json`, _data);
 };
 
 const saveMetaDataSingleFile = (_editionCount) => {
@@ -307,7 +306,7 @@ const saveMetaDataSingleFile = (_editionCount) => {
         `Writing metadata for ${_editionCount}: ${JSON.stringify(metadata)}`
       )
     : null;
-  fs.writeFileSync(
+  writeFileSync(
     `${buildDir}/json/${_editionCount}.json`,
     JSON.stringify(metadata, null, 2)
   );
@@ -422,4 +421,4 @@ const startCreating = async () => {
   writeMetaData(JSON.stringify(metadataList, null, 2));
 };
 
-module.exports = { startCreating, buildSetup, getElements };
+export default { startCreating, buildSetup, getElements };
