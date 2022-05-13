@@ -1,8 +1,8 @@
 {
   "response": "OK",
-  "chain": "rinkeby",
-  "transaction_hash": "0x81de6df146cab313cf8e8f9aa8ff75e11c4a14ba78efc690d848c4e6a7a5bf37",
-  "transaction_external_url": "https://rinkeby.etherscan.io/tx/0x81de6df146cab313cf8e8f9aa8ff75e11c4a14ba78efc690d848c4e6a7a5bf37",
+  "chain": "polygon",
+  "transaction_hash": "0x1366e9e36d8391edd9fe6f2c71894a15c9f4356f81d7ff71526549817ee4411a",
+  "transaction_external_url": "https://polygonscan.com/tx/0x1366e9e36d8391edd9fe6f2c71894a15c9f4356f81d7ff71526549817ee4411a",
   "owner_address": "0xdAD1746335198B0dd1aA4EfeC54285b04C43C73F",
   "name": "Crypto Melman",
   "symbol": "CMNFT"

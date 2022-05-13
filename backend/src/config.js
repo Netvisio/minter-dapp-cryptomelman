@@ -53,7 +53,7 @@ const CONTRACT_SYMBOL = 'CMNFT';
 const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0xdAD1746335198B0dd1aA4EfeC54285b04C43C73F';
 const TREASURY_ADDRESS = '0xdAD1746335198B0dd1aA4EfeC54285b04C43C73F';
-const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 87; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 50; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
