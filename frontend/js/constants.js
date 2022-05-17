@@ -1,4 +1,4 @@
-const contractAddress = "0xab5e8F9670045C7853bA5C1724C5b57F29893d1c"; //Replace with your own contract address
+const contractAddress = "0xb30dD53AeFE8a50079177bc8B0404571e9757D76"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Crypto Melman NFT Project!!";
